@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Team</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="MyTeamCSS.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class = "navbar-brand">
+            <a class = "navbar-brand" href="#"> 
+                <img src= "amdocs-logo.jpg" class="img-responsive logo">
+            </a>
+        </div>
+      
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Managments <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">My Team</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Assignments Requests 
+                <span class="badge"  style="border-style: outset; border-color: red; background-color: red;">12</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+          </ul>
+
+          <div class="dropdown" style="padding-right: 5%;">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="true">  John Robson
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+        </div>
+      </nav>
+
+     <form class="form-inline my-2 my-lg-0" style="padding-left: 80%;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by skill...">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+
+       <h1 style="color:teal;font-size:40px;"><center>My Team</center> </h1>
+
+
+      <table class="table" style="  width: 70%; margin-left: 200px; margin-top: 20px ">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">   Name</th>
+                <th scope="col">   ID</th>
+                <th scope="col">   Top 3 Skills</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+
+
+            <tbody class="dataTable">
+        
+            </tbody>
+          </table>
+          
+          <div class="pagination">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+          </div>
+
+
+
+
+</body>
+<script  src="MyTeamData.js"> </script>
+<script  src="MyTeamAPI.js"> </script>
+
+
+</html>
